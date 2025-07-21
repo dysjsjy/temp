@@ -1,0 +1,25 @@
+<mirrors>
+<!-- 阿里云公共仓库 -->
+<mirror>
+    <id>aliyunmaven</id>
+    <mirrorOf>*</mirrorOf>
+    <name>阿里云公共仓库</name>
+    <url>https://maven.aliyun.com/repository/public</url>
+</mirror>
+
+<!-- 阿里云Spring仓库 -->
+<mirror>
+    <id>aliyunspring</id>
+    <mirrorOf>spring,spring-plugin</mirrorOf>
+    <name>阿里云Spring仓库</name>
+    <url>https://maven.aliyun.com/repository/spring</url>
+</mirror>
+
+<!-- 阿里云Google仓库 -->
+<mirror>
+    <id>aliyungoogle</id>
+    <mirrorOf>google</mirrorOf>
+    <name>阿里云Google仓库</name>
+    <url>https://maven.aliyun.com/repository/google</url>
+</mirror>
+</mirrors>
