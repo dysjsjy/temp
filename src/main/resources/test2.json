@@ -1,0 +1,15 @@
+[
+  {
+    "tableName": "tag",
+    "rowCount": 1000,
+    "fields": [
+      {"name": "tagName", "type": "varchar", "rule": "faker.lorem.word + index"},
+      {"name": "userId", "type": "bigint", "rule": "random(1, 10000)"},
+      {"name": "parentId", "type": "bigint", "rule": "random_boolean ? 0 : random(1, 100)"},
+      {"name": "isParent", "type": "int", "rule": "parentId == 0 ? 1 : 0"},
+      {"name": "createTime", "type": "timestamp", "rule": "now"},
+      {"name": "updateTime", "type": "timestamp", "rule": "now"},
+      {"name": "isDelete", "type": "int", "rule": "fixed(0)"}
+    ]
+  }
+]

@@ -14,8 +14,8 @@ import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class Test {
-    private static final Logger logger = LoggerFactory.getLogger(Test.class);
+public class Test2 {
+    private static final Logger logger = LoggerFactory.getLogger(Test2.class);
     private Faker faker = new Faker(new Locale("zh-CN"));
 
     private Map<String, List<Object>> primaryKeyCache = new HashMap<>();
@@ -23,9 +23,9 @@ public class Test {
     private HikariDataSource dataSource;
 
     public static void main(String[] args) throws Exception {
-        Test test = null;
+        Test2 test = null;
         try {
-            test = new Test();
+            test = new Test2();
 
 
 //        List<String> tag = test.getTableColumns(test.getConnection(), "tag");
@@ -41,7 +41,7 @@ public class Test {
 
     }
 
-    public Test() {
+    public Test2() {
 
         // String url = "jdbc:mysql://localhost:3306/dyumb?useSSL=true&characterEncoding=utf8";
         // String user = "root";
